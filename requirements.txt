@@ -1,9 +1,75 @@
-Flask
-openai
-whisper
-line-bot-sdk
-openpyxl
-pandas
-selenium
-undetected-chromedriver
-webdriver-manager
+aenum==3.1.15
+aiohttp==3.8.4
+aiosignal==1.3.1
+async-timeout==4.0.2
+attrs==23.1.0
+blinker==1.6.2
+brotlipy==0.7.0
+certifi @ file:///C:/b/abs_36eb5mzhph/croot/certifi_1690232276943/work/certifi
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.1.6
+colorama==0.4.6
+cryptography @ file:///C:/b/abs_13590mi9q9/croot/cryptography_1689373706078/work
+Deprecated==1.2.14
+et-xmlfile==1.1.0
+exceptiongroup==1.1.2
+filelock @ file:///C:/b/abs_c7yrhs9uz2/croot/filelock_1672387617533/work
+Flask==2.3.2
+frozenlist==1.4.0
+future==0.18.3
+h11==0.14.0
+idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
+itsdangerous==2.1.2
+Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
+line-bot-sdk==3.1.0
+llvmlite==0.40.1
+MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
+mkl-fft==1.3.6
+mkl-random @ file:///C:/Users/dev-admin/mkl/mkl_random_1682977971003/work
+mkl-service==2.4.0
+more-itertools==10.0.0
+mpmath==1.2.1
+multidict==6.0.4
+networkx @ file:///C:/b/abs_b935xy_9g6/croot/networkx_1678964342510/work
+numba==0.57.1
+numpy==1.24.4
+openai==0.27.8
+openai-whisper @ git+https://github.com/openai/whisper.git@b91c907694f96a3fb9da03d4bbdc83fbcd3a40a4
+openpyxl==3.1.2
+outcome==1.2.0
+packaging==23.1
+pandas==2.0.3
+Pillow==9.4.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pydantic==1.10.12
+pyOpenSSL @ file:///C:/b/abs_08f38zyck4/croot/pyopenssl_1690225407403/work
+PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+pytz==2023.3
+regex==2023.6.3
+requests @ file:///C:/b/abs_316c2inijk/croot/requests_1690400295842/work
+selenium==4.10.0
+six==1.16.0
+sniffio==1.3.0
+sortedcontainers==2.4.0
+sympy @ file:///C:/b/abs_95fbf1z7n6/croot/sympy_1668202411612/work
+tiktoken==0.3.3
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+tqdm==4.65.0
+trio==0.22.2
+trio-websocket==0.10.3
+typing_extensions @ file:///C:/b/abs_213vg2cd1l/croot/typing_extensions_1690297804941/work
+tzdata==2023.3
+undetected-chromedriver==3.5.0
+urllib3 @ file:///C:/b/abs_889_loyqv4/croot/urllib3_1686163174463/work
+webdriver-manager==4.0.0
+websockets==11.0.3
+Werkzeug==2.3.6
+win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
+wrapt==1.15.0
+wsproto==1.2.0
+yarl==1.9.2
