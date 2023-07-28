@@ -158,27 +158,31 @@ def linebot():
                 line_bot_api.reply_message(ReplyToken, TextSendMessage(reply))
 
             elif type == 'audio':
-                #寫入音訊檔
-                audio_content = line_bot_api.get_message_content(MsgID)
-                path='./Sound/sound.m4a'
-                with open(path, 'wb') as fd:
-                    for chunk in audio_content.iter_content():
-                        fd.write(chunk)
+                try:
+                    print("Is Audio")
+                    #寫入音訊檔
+                    audio_content = line_bot_api.get_message_content(MsgID)
+                    path='./Sound/sound.m4a'
+                    with open(path, 'wb') as fd:
+                        for chunk in audio_content.iter_content():
+                            fd.write(chunk)
 
-                #進行語音轉文字處理
-                # model = whisper.load_model("base")
-                # result = model.transcribe(path)
-                # print("Audio Context : ", result["text"])
-                # reply = GPT_response(result["text"])
-                # reply = result["text"]
+                    #進行語音轉文字處理
+                    # model = whisper.load_model("base")
+                    # result = model.transcribe(path)
+                    # print("Audio Context : ", result["text"])
+                    # reply = GPT_response(result["text"])
+                    # reply = result["text"]
 
-                audio_file= open(path, "rb")
-                result = openai.Audio.transcribe("whisper-1", audio_file)
-                print("Audio Context : ", result["text"])
-                reply = result["text"]      
-                print("reply : ", reply)
-                #將轉換的文字回傳給用戶
-                line_bot_api.reply_message(ReplyToken, TextSendMessage(text=reply))
+                    audio_file= open(path, "rb")
+                    result = openai.Audio.transcribe("whisper-1", audio_file)
+                    print("Audio Context : ", result["text"])
+                    reply = result["text"]      
+                    print("reply : ", reply)
+                    #將轉換的文字回傳給用戶
+                    line_bot_api.reply_message(ReplyToken, TextSendMessage(text=reply))
+                except Exception as e:
+                    print("ERROR (Audio) : ",e)
 
             else:
                 reply = '你傳的不是文字呦～'
@@ -191,5 +195,8 @@ def linebot():
 
 
 if __name__ == "__main__":
+    warnings.filterwarnings("ignore", category=LineBotSdkDeprecatedIn30)
+    # port = int(os.environ.get('PORT', 6000))
+    # app.run(host='0.0.0.0', port=port)
     app.run(port=6000)
     # app.run()
