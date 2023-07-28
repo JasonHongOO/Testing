@@ -19,7 +19,7 @@ from linebot import LineBotSdkDeprecatedIn30
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, FollowEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage,TemplateSendMessage, ButtonsTemplate, PostbackAction, MessageAction, URIAction
-import whisper
+# import whisper
 import openai
 
 

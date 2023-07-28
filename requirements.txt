@@ -1,16 +1,10 @@
 Flask==2.3.2
 line-bot-sdk
-numba==0.57.1
-numpy==1.24.4
 openai
-openai-whisper
 openpyxl
 pandas==2.0.3
-Pillow==9.4.0
-pycparser
 python-dotenv
 requests 
 selenium
 undetected-chromedriver==3.5.0
 webdriver-manager==4.0.0
-websockets==11.0.3
