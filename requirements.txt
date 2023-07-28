@@ -5,16 +5,16 @@ async-timeout==4.0.2
 attrs==23.1.0
 blinker==1.6.2
 brotlipy==0.7.0
-certifi @ file:///C:/b/abs_36eb5mzhph/croot/certifi_1690232276943/work/certifi
-cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+certifi 
+cffi 
+charset-normalizer
 click==8.1.6
 colorama==0.4.6
-cryptography @ file:///C:/b/abs_13590mi9q9/croot/cryptography_1689373706078/work
+cryptography 
 Deprecated==1.2.14
 et-xmlfile==1.1.0
 exceptiongroup==1.1.2
-filelock @ file:///C:/b/abs_c7yrhs9uz2/croot/filelock_1672387617533/work
+filelock 
 Flask==2.3.2
 frozenlist==1.4.0
 future==0.18.3
