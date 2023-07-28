@@ -173,7 +173,7 @@ def linebot():
                     # print("Audio Context : ", result["text"])
                     # reply = GPT_response(result["text"])
                     # reply = result["text"]
-
+                    line_bot_api.push_message(UserID, TextSendMessage(text="Audio File Prepare Completed"))
                     audio_file= open(path, "rb")
                     result = openai.Audio.transcribe("whisper-1", audio_file)
                     print("Audio Context : ", result["text"])
@@ -182,7 +182,9 @@ def linebot():
                     #將轉換的文字回傳給用戶
                     line_bot_api.reply_message(ReplyToken, TextSendMessage(text=reply))
                 except Exception as e:
-                    print("ERROR (Audio) : ",e)
+                    ErrorMsg = f"ERROR (Audio) : {e}"
+                    line_bot_api.push_message(UserID, TextSendMessage(text=ErrorMsg))
+                    print(ErrorMsg)
 
             else:
                 reply = '你傳的不是文字呦～'
