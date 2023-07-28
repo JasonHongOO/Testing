@@ -1,0 +1,9 @@
+Flask
+openai
+whisper
+line-bot-sdk
+openpyxl
+pandas
+selenium
+undetected-chromedriver
+webdriver-manager

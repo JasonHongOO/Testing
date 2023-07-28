@@ -1,0 +1,10 @@
+*.env
+Testing.py
+
+_pycache_
+
+/Weather/_pycache_
+
+tempCodeRunnerFile.py
+
+
