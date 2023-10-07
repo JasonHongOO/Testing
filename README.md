@@ -1,5 +1,7 @@
 # Line Bot
+<div align="center">
 <img src="https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(1).jpg" width="200"/><img src="https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(2).jpg" width="200"/><img src="https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(3).jpg" width="200"/>
+</div>
 
 
 # 註記
