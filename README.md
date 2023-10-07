@@ -1,5 +1,5 @@
 # Line Bot
-![image](https://github.com/JasonHongOO/MyCT_Script/blob/main/Images/1.PNG)
+![image](https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(1).jpg)![image](https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(2).jpg)![image](https://github.com/JasonHongOO/Testing/blob/main/Images/1%20(3).jpg)
 
 # 註記
 
