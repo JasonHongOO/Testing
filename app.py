@@ -167,14 +167,18 @@ def linebot():
                         for chunk in audio_content.iter_content():
                             fd.write(chunk)
 
+                    print(audio_content)
+
                     #進行語音轉文字處理
                     # model = whisper.load_model("base")
                     # result = model.transcribe(path)
                     # print("Audio Context : ", result["text"])
                     # reply = GPT_response(result["text"])
                     # reply = result["text"]
-                    line_bot_api.push_message(UserID, TextSendMessage(text="Audio File Prepare Completed"))
+
+                    # line_bot_api.push_message(UserID, TextSendMessage(text="Audio File Prepare Completed"))
                     audio_file= open(path, "rb")
+                    print("audio_file : ",audio_file)
                     result = openai.Audio.transcribe("whisper-1", audio_file)
                     print("Audio Context : ", result["text"])
                     reply = result["text"]      
@@ -183,7 +187,7 @@ def linebot():
                     line_bot_api.reply_message(ReplyToken, TextSendMessage(text=reply))
                 except Exception as e:
                     ErrorMsg = f"ERROR (Audio) : {e}"
-                    line_bot_api.push_message(UserID, TextSendMessage(text=ErrorMsg))
+                    # line_bot_api.push_message(UserID, TextSendMessage(text=ErrorMsg))
                     print(ErrorMsg)
 
             else:
